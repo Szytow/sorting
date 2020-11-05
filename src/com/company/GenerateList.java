@@ -21,4 +21,12 @@ public class GenerateList {
         return array;
     }
 
+    public static List<Integer> copy(List<Integer> oglist){
+        List<Integer> array = new ArrayList();
+        for (int number  : oglist) {
+            array.add(number);
+        }
+        return array;
+    }
+
 }

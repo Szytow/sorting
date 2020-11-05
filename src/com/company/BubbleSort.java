@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 
 public class BubbleSort {
-    public static void bubbleSort(List<Integer> list){
+    public static List<Integer> bubbleSort(List<Integer> list){
         int tmp;
         for (int i = 0; i < list.size() - 1; i++) {
             for(int j = 1; j < list.size() - i; j++){
@@ -18,5 +18,6 @@ public class BubbleSort {
                 }
             }
         }
+        return list;
     }
 }
